@@ -8,7 +8,7 @@ const routing = express.Router();
 
 routing.get('/', fetchUsers);
 routing.post('/', createUser);
-routing.put('/', updateUser);
+routing.put('/:id', updateUser);
 routing.delete('/:id', deleteUser);
 
 

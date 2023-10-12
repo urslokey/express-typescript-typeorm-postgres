@@ -20,7 +20,7 @@ async function updateUser(req: Request, res: Response) {
     await dbConfig.createQueryBuilder()
       .update(User)
       .set(upadateUser)
-      .where("id = :id", { id: req.body.id })
+      .where("id = :id", { id: req.params.id })
       .execute();
 
 

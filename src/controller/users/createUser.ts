@@ -14,7 +14,7 @@ async function createUser(req: Request, res: Response) {
     .values(req.body)
     .execute();
       
-    res.statusCode = 200;
+    res.statusCode = 201;
     res.json({ message: "Created successfully.", data: [] });
   } catch (error) {
     res.statusCode = 500;
