@@ -7,7 +7,7 @@ export const dbConfig = new DataSource({
     host: "localhost",
     port: 5432,
     username: "postgres",
-    password: "lokeY@2094",
+    password: "your_db_password",
     database: "development",
     synchronize: false,
     logging: false,
